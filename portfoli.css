@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    box-sizing: border-box;
+    background-color:black;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 25px;
+    background-color: #818181;
+}
+.nav ul{
+    display: flex;
+}
+.nav ul li{
+    list-style: none;
+    padding: 5px;
+}
+.nav ul li a{
+    text-decoration: none;
+    color:black;
+    font-size: large;
+}
+.nav ul li a:hover{
+    text-decoration: underline;
+    color: lime;
+}
+.hire_btn{
+    padding-right:25px;
+}
+.hire{
+    width: 100px;
+    height: 35px;
+    font-size: large;
+    border-radius: 10px;
+}
+.hire:hover{
+    background-color: black;
+    color: lime;
+}
