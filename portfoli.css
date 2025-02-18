@@ -13,14 +13,22 @@ body{
     align-items: center;
     margin-top: 1rem;
     padding: 25px;
-    background-color: #818181;
+}
+.navigation{
+    background-color: rgba(81, 80, 80, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
 }
 .nav ul{
     display: flex;
 }
 .nav ul li{
     list-style: none;
-    padding: 5px;
+    padding: 0 20px;
 }
 .nav ul li a{
     text-decoration: none;
@@ -45,4 +53,87 @@ body{
     background-color: black;
     color: lime;
     box-shadow: 0px 0px 20px black;
+}
+
+   * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+/* NAVIGATION BAR */
+.navbar {
+    position: fixed; /* Stays at the top while scrolling */
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.3); /* Transparent black */
+    backdrop-filter: blur(10px); /* Blurred background */
+}
+
+/* LOGO */
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* NAVIGATION MENU */
+.nav ul {
+    display: flex;
+}
+
+.nav ul li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+/* NAVIGATION LINKS */
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+/* HOVER EFFECT */
+.nav ul li a:hover {
+    color: lime;
+}
+
+/* HIRE ME BUTTON */
+.hire_btn {
+    padding-right: 25px;
+}
+
+.hire {
+    width: 120px;
+    height: 40px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    background-color: lime;
+    color: black;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* HOVER EFFECT FOR BUTTON */
+.hire:hover {
+    background-color: black;
+    color: lime;
+    box-shadow: 0px 0px 10px lime;
 }
