@@ -1,18 +1,24 @@
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
 }
 body{
-    box-sizing: border-box;
+    color: white;
     background-color:black;
 }
 .navbar{
+    position: fixed; /* Stays at the top while scrolling */
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 1rem;
-    padding: 25px;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.3); 
+    backdrop-filter: blur(10px);
 }
 .navigation{
     background-color: rgba(81, 80, 80, 0.3);
@@ -23,17 +29,25 @@ body{
     justify-content: center;
     border-radius: 10px;
 }
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
 .nav ul{
     display: flex;
 }
 .nav ul li{
     list-style: none;
     padding: 0 20px;
+    padding: 0 20px;
 }
 .nav ul li a{
     text-decoration: none;
-    color:black;
-    font-size: large;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
 }
 .nav ul li a:hover{
     text-decoration: underline;
@@ -43,82 +57,6 @@ body{
     padding-right:25px;
 }
 .hire{
-    width: 100px;
-    height: 35px;
-    font-size: large;
-    border: 1px;
-    border-radius: 10px;
-}
-.hire:hover{
-    background-color: black;
-    color: lime;
-    box-shadow: 0px 0px 20px black;
-}
-
-   * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: black;
-    color: white;
-}
-
-/* NAVIGATION BAR */
-.navbar {
-    position: fixed; /* Stays at the top while scrolling */
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-    z-index: 1000;
-    background: rgba(0, 0, 0, 0.3); /* Transparent black */
-    backdrop-filter: blur(10px); /* Blurred background */
-}
-
-/* LOGO */
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-/* NAVIGATION MENU */
-.nav ul {
-    display: flex;
-}
-
-.nav ul li {
-    list-style: none;
-    padding: 0 20px;
-}
-
-/* NAVIGATION LINKS */
-.nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    transition: color 0.3s ease-in-out;
-}
-
-/* HOVER EFFECT */
-.nav ul li a:hover {
-    color: lime;
-}
-
-/* HIRE ME BUTTON */
-.hire_btn {
-    padding-right: 25px;
-}
-
-.hire {
     width: 120px;
     height: 40px;
     font-size: 1rem;
@@ -130,10 +68,8 @@ body {
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
-
-/* HOVER EFFECT FOR BUTTON */
-.hire:hover {
+.hire:hover{
     background-color: black;
     color: lime;
-    box-shadow: 0px 0px 10px lime;
+    box-shadow: 0px 0px 20px lime;
 }
