@@ -72,3 +72,33 @@ body{
     color: lime;
     box-shadow: 0px 0px 20px lime;
 }
+.display{
+    margin-top: 350px;
+    color: black;
+    display: flex;
+    text-align: center;
+}
+.name{
+    color: lime;
+    text-align: center;
+    font-size: 2rem;
+}
+.deatil{
+    color: white;
+    text-align: center;
+    font: size 1.5rem; 
+}
+.deatil span{
+    color: lime;
+}
+.detsails{
+    color: white;
+    font: size 1.5rem;
+    text-align: center;
+    Display: block;
+}
+.img-display{
+    width:200px;
+    height:400px;
+    margin-top: -180px;
+}
