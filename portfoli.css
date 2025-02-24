@@ -144,10 +144,21 @@ margin: 10px 40px;
 .skill-card img {
 width: 200px;
 height: auto;
-}           
-.skill-card:hover{
-    transform: translate(10px,-10px);
-    transform: rotate(25deg);
-    animation-delay: 14ms;
-    animation-duration: 50ms;
-}                     
+}    
+@keyframes anim {
+    from {
+        transform: translate(0px, 0px);
+    }
+    to {
+        transform: translate(10px, -10px) rotate(10deg);
+    }
+}
+
+.skill-card:hover {
+    animation-name: anim;
+    animation-duration: 0.3s; 
+    
+    animation-timing-function: ease-in-out; 
+    animation-fill-mode: forwards; 
+}
+                    
