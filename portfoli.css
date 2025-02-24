@@ -21,7 +21,6 @@ body{
     backdrop-filter: blur(10px);
 }
 .navigation{
-    background-color: rgba(81, 80, 80, 0.3);
     backdrop-filter: blur(10px);
     padding: 50px;
     width: 500px;
@@ -44,7 +43,7 @@ body{
 .nav ul li a{
     text-decoration: none;
     color: white;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: bold;
     transition: color 0.3s ease-in-out;
 }
@@ -56,9 +55,9 @@ body{
     padding-right:25px;
 }
 .hire{
-    width: 120px;
-    height: 40px;
-    font-size: 1rem;
+    width: 150px;
+    height: 45px;
+    font-size: 1.5rem;
     font-weight: bold;
     border: none;
     border-radius: 20px;
@@ -71,34 +70,46 @@ body{
     background-color: black;
     color: lime;
     box-shadow: 0px 0px 20px lime;
+    border:2px solid #8AFF1E;
+    transform: translate(0,-10px);
 }
 .display{
-    margin-top: 350px;
-    color: black;
+    margin-top: 250px;
     display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 50px;
+}
+.description{
     text-align: center;
 }
 .name{
-    color: lime;
-    text-align: center;
-    font-size: 2rem;
-}
-.deatil{
     color: white;
-    text-align: center;
-    font: size 1.5rem; 
+    font-size: 3rem;
+    text-align: left;
+    margin-bottom: 20px; 
 }
-.deatil span{
-    color: lime;
-}
-.detsails{
+.detail{
     color: white;
-    font: size 1.5rem;
-    text-align: center;
-    Display: block;
+    font-size :2rem;
+    text-align: left;
+    margin-bottom: 20px; 
 }
-.img-display{
-    width:200px;
-    height:400px;
-    margin-top: -180px;
+.detail span{
+    background: #8AFF1E;
+    background: linear-gradient(to right, #8AFF1E 0%, #2FCFC8 71%); 
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip:text; 
+}
+
+.details{
+    color: white;
+    font-size: 1rem;
+    text-align: left;
+}
+.img-display img{
+    width: 300px; 
+    height: 300px;
+    border-radius: 10px; 
+    background-color: #8AFF1E;
 }
