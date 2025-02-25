@@ -9,7 +9,7 @@ body{
     background-color:black;
 }
 .navbar{
-    position: fixed; /* Stays at the top while scrolling */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -96,7 +96,6 @@ body{
     margin-bottom: 20px; 
 }
 .detail span{
-    background: #8AFF1E;
     background: linear-gradient(to right, #8AFF1E 0%, #2FCFC8 71%); 
     -webkit-text-fill-color: transparent; 
     -webkit-background-clip:text; 
@@ -118,15 +117,19 @@ body{
 
                     /* skills */
 .skills {
-display: flex;
-justify-content: center;
-align-items: center;
-padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }   
+.heading{
+    text-align:center;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    font-size: 2rem;
+}
 .skills-container {
 display: grid;
-grid-template-columns: repeat(3, 1fr); /* 3 columns */
-gap: 30px; 
+grid-template-columns: repeat(3, 1fr);  
 justify-items: center;
 }          
 .skill-card {
@@ -150,15 +153,86 @@ height: auto;
         transform: translate(0px, 0px);
     }
     to {
-        transform: translate(10px, -10px) rotate(10deg);
+        transform: translate(-5px, 5px) rotate(5deg);
     }
 }
 
 .skill-card:hover {
     animation-name: anim;
     animation-duration: 0.3s; 
-    
+    box-shadow: 0 0 20px #8AFF1E;
     animation-timing-function: ease-in-out; 
     animation-fill-mode: forwards; 
 }
-                    
+
+
+/*   projects */
+
+.projects{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+.project{
+    text-align: center;
+}
+.num{
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #8AFF1E;
+    margin-bottom: 10px;
+}
+.card{
+    margin-top: 10px;
+    width: 350px;
+    height: 400px;
+    background-color: #252521;
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+    padding: 30px;
+    border: none;
+    transition: transform 0.3s ease-in-out;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow:inset 0px 0px 10px #8AFF1E;
+}
+.card h1{
+    padding: 10px;
+}
+.card p {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: transparent; 
+}
+
+.but-project {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.but-project .btn button{
+    width: 120px;
+    padding: 8px 12px;
+    border: none;
+    background-color: #8AFF1E;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.but-project .btn button:hover {
+    border: solid;
+    border-radius: 5px; 
+    box-shadow: 0px 0px 40px black/* Lighter green on hover */
+}
