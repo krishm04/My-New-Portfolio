@@ -228,11 +228,11 @@ height: auto;
     font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
-    cursor: pointer;
     transition: background 0.3s;
 }
 .but-project .btn button:hover {
     border: solid;
     border-radius: 5px; 
-    box-shadow:inset 0px 0px 10px black;
+    border: none;
+    box-shadow:inset 0px 0px 15px black;
 }
