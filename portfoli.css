@@ -211,7 +211,10 @@ height: auto;
     padding: 10px;
     background-color: transparent; 
 }
-
+.card img{
+    max-width: 200px;
+    height: 150px;
+}
 .but-project {
     display: flex;
     justify-content: center;
