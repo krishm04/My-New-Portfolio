@@ -234,5 +234,5 @@ height: auto;
 .but-project .btn button:hover {
     border: solid;
     border-radius: 5px; 
-    box-shadow: 0px 0px 40px black/* Lighter green on hover */
+    box-shadow:inset 0px 0px 10px black;
 }
