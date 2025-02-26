@@ -1,6 +1,6 @@
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 98px;
+    scroll-padding-top: 150px;
 }
 /* @keyframes fadeIn {
     from {
@@ -38,6 +38,7 @@ body{
     padding: 10px 50px;
     background: rgba(0, 0, 0, 0.3); 
     backdrop-filter: blur(10px);
+    z-index: 1;
 }
 .navigation{
     padding: 50px;
@@ -142,9 +143,21 @@ body{
     cursor: pointer;
     box-shadow: 0px 0px 30px #8AFF1E;
 }
+      /* for all heding */
+.heading{
+    margin: 50px auto;
+    width:10%;
+    border: 2px solid #8AFF1E;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 2rem;
+}
 
 
                     /* about me */
+#About-Me{
+    margin: 60px;
+}
 .about-me{
     display: flex;
     justify-content: center;
@@ -169,17 +182,14 @@ body{
 } 
 
                     /* skills */
+#Skills{
+    margin: 120px;
+}
 .skills {
     display: flex;
     justify-content: center;
     align-items: center;
 }   
-.heading{
-    text-align:center;
-    margin-bottom: 50px;
-    padding-top: 50px;
-    font-size: 2rem;
-}
 .skills-container {
 display: grid;
 grid-template-columns: repeat(3, 1fr);  
@@ -220,7 +230,9 @@ height: 80px;
 
 
 /*   projects */
-
+#Projects{
+    margin-top: 190px;
+}
 .projects{
     display: flex;
     justify-content: center;
