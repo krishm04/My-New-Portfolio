@@ -89,13 +89,13 @@ body{
     text-align: left;
     margin-bottom: 20px; 
 }
-.detail{
+.role{
     color: white;
     font-size :2rem;
     text-align: left;
     margin-bottom: 20px; 
 }
-.detail span{
+.role span{
     background: linear-gradient(to right, #8AFF1E 0%, #2FCFC8 71%); 
     -webkit-text-fill-color: transparent; 
     -webkit-background-clip:text; 
@@ -148,7 +148,7 @@ margin: 10px 40px;
 width: 200px;
 height: auto;
 }    
-@keyframes anim {
+@keyframes anima {
     from {
         transform: translate(0px, 0px);
     }
@@ -158,7 +158,7 @@ height: auto;
 }
 
 .skill-card:hover {
-    animation-name: anim;
+    animation-name: anima;
     animation-duration: 0.3s; 
     box-shadow: 0 0 20px #8AFF1E;
     animation-timing-function: ease-in-out; 
@@ -195,6 +195,7 @@ height: auto;
     text-align: center;
     padding: 30px;
     border: none;
+    cursor: pointer;
     transition: transform 0.3s ease-in-out;
 }
 .card:hover {
