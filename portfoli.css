@@ -40,13 +40,15 @@ body{
     backdrop-filter: blur(10px);
     z-index: 1;
 }
-.navigation{
-    padding: 50px;
-    width: 500px;
+.navigation {
+    padding: 20px;
+    width: auto; 
     display: flex;
     justify-content: center;
-    border-radius: 10px;
+    flex-wrap: wrap; 
+    gap: 20px; 
 }
+
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
