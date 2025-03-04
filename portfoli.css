@@ -1,6 +1,6 @@
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 150px;
+    scroll-padding-top: 140px;
 }
 /* @keyframes fadeIn {
     from {
@@ -182,29 +182,6 @@ body{
     font-weight: bold;
     font-size: 1.07rem;
 } 
-.icons{
-    display: flex;
-    justify-content: space-around;
-    max-width: 30%;
-    margin: 40px;
-    padding: 10px;
-}
-.icons [type='logo']{
-    border-radius: 50%;
-    border: 2px solid black;
-    width: 50px;
-    height: 50px;
-    padding: 5px;
-    background-color: #8AFF1E;
-}
-.icons [type='logo']:hover{
-    cursor: pointer;
-    scale: 1.2;
-    border: 2px solid #8AFF1E;
-    background-color: black;
-    fill: #8AFF1E;
-    box-shadow:0px 0px 10px #8AFF1E;
-}
 
                     /* skills */
 #Skills{
@@ -329,3 +306,70 @@ height: 80px;
     border: none;
     box-shadow:inset 0px 0px 15px black;
 }
+/*   contact */
+
+.contact{
+    padding: 0 90px;
+}
+.first-row{
+    text-align: center;
+}
+.text{
+    font-size: 1.2rem;
+}
+.email{
+    font-size: 3rem;
+}
+.second-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+}
+.cont-table{
+    width: 1000px;
+}
+table tr{
+    height: 100px;
+}
+table tr td input{
+    width: 100%;
+    height: 90px;
+    background-color: black;
+}
+.dec{
+    text-decoration: underline;
+}
+input{
+    font-size: 1.5rem;
+    color: #8AFF1E;
+}
+.submit{
+    width: 150px;
+    height: 60px;
+    border-radius: 12px;
+}
+
+.icons{
+    display: flex;
+    max-width: 30%;
+    align-items: center;
+    text-align: center;
+}
+.icons [type='logo']{
+    border-radius: 50%;
+    border: 2px solid black;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    background-color: #8AFF1E;
+}
+.icons [type='logo']:hover{
+    cursor: pointer;
+    scale: 1.2;
+    border: 2px solid #8AFF1E;
+    background-color: black;
+    fill: #8AFF1E;
+    box-shadow:0px 0px 10px #8AFF1E;
+} 
+
