@@ -85,6 +85,14 @@ body{
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
+.hire a{
+    text-decoration: none;
+    color: black;
+}
+.hire a:hover{
+    text-decoration: none;
+    color: lime;
+}
 .hire:hover{
     background-color: black;
     color: lime;
@@ -172,12 +180,11 @@ body{
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    background-color: #85fb171a;
 }        
 .about-img img:hover {
     transform: scale(1.07);
     cursor: pointer;
-    box-shadow: 0px 0px 30px #8AFF1E;
+    box-shadow: 0px 0px 30px #e3e3e3;
 }
 .about_description p{
     font-weight: bold;
