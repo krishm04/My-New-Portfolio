@@ -182,6 +182,30 @@ body{
     font-weight: bold;
     font-size: 1.07rem;
 } 
+.icons{
+    display: flex;
+    max-width: 30%;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    gap: 10px;
+}
+.icons [type='logo']{
+    border-radius: 50%;
+    border: 2px solid black;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    background-color: #8AFF1E;
+}
+.icons [type='logo']:hover{
+    cursor: pointer;
+    scale: 1.2;
+    border: 2px solid #8AFF1E;
+    background-color: black;
+    fill: #8AFF1E;
+    box-shadow:0px 0px 10px #8AFF1E;
+} 
 
                     /* skills */
 #Skills{
@@ -307,7 +331,12 @@ height: 80px;
     box-shadow:inset 0px 0px 15px black;
 }
 /*   contact */
-
+footer{
+    margin:60px 0px; 
+}
+#Contact{
+    margin-top: 180px;
+}
 .contact{
     padding: 0 90px;
 }
@@ -323,28 +352,64 @@ height: 80px;
 .form-group{
     display: flex;
     flex-direction: column;
+    margin: 10px;
+    align-items: center;
+}
+.input-wrapper{
+    text-align: center;
+    width: 100%;
+    margin: 20px;
+}
+.input-wrapper input{
+    width: 49%;
+    height: 60px;
+    background-color: black;
+    color: #8AFF1E;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    border-bottom:2px solid #8AFF1E;
+}
+input::placeholder{
+    font-size: 20px;
+    color: #8AFF1E;
+}
+.form-group textarea{
+    width: 98%;
+    height: 100px;
+    margin:0 20px;
+    font-size: 25px;
+    background-color: black;
+    color: #8AFF1E;
+    outline: none;
+    border: none;
+    border-bottom:2px solid #8AFF1E;
+}
+textarea::placeholder{
+    font-size: 25px;
+    color: #8AFF1E;
+}
+.form-group button{
+    margin-top: 2cap;
+    text-align: center;
+    width: 150px;
+    height: 45px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    background-color: lime;
+    color: black;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.form-group button:hover{
+    background-color: black;
+    color: lime;
+    box-shadow: 0px 0px 20px lime;
+    border:2px solid #8AFF1E;
+    transform: translate(0px,-10px);
+
 }
 
-.icons{
-    display: flex;
-    max-width: 30%;
-    align-items: center;
-    text-align: center;
-}
-.icons [type='logo']{
-    border-radius: 50%;
-    border: 2px solid black;
-    width: 50px;
-    height: 50px;
-    padding: 5px;
-    background-color: #8AFF1E;
-}
-.icons [type='logo']:hover{
-    cursor: pointer;
-    scale: 1.2;
-    border: 2px solid #8AFF1E;
-    background-color: black;
-    fill: #8AFF1E;
-    box-shadow:0px 0px 10px #8AFF1E;
-} 
 
